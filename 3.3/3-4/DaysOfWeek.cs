@@ -2,7 +2,7 @@ class DaysOfWeek : IPrinter
     {
         public void Print()
         {
-            dayOfWeek = new string["Понедельник", 
+            string[] dayOfWeek = new string["Понедельник", 
                                    "Вторник", 
                                    "Среда", 
                                    "Четверг", 
@@ -14,7 +14,7 @@ class DaysOfWeek : IPrinter
             
             Console.WriteLine("День недели:");
             DateTime date = DateTime.Now;
-            Console.WriteLine(dayOfWeek.DaysOfWeek);
+            Console.WriteLine(date.DaysOfWeek);
 
         }
     }

@@ -1,7 +1,7 @@
 interface IOneDimesionalArray : IBaseOneDimesionalArray
 {
-    void DeleteElementsBiggerThan100()
-    int RemoveDuplicates()
+    void DeleteElementsBiggerThan100();
+    int[] RemoveDuplicates();
 }
 
 

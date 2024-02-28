@@ -1,7 +1,7 @@
 interface IJaggedArray : BaseArray
 {
-    double GetAveragesInInnerArrays()
-    void ChangeEvenElements()
+    double[] GetAveragesInInnerArrays();
+    void ChangeEvenElements();
 }
 
 

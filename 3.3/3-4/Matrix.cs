@@ -1,6 +1,6 @@
 interface IMatrix : IBaseArray
 {
-    void PrintArrayWithEvenReversedRows()
+    void PrintArrayWithEvenReversedRows();
 }
 
 public sealed class Matrix : IMatrix
