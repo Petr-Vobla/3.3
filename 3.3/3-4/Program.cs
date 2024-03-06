@@ -19,7 +19,7 @@ class Program
 
         Console.WriteLine("Вывод:");
 
-        for (int i = 0; i < printObj.Length; i++)
+        for (int i = 0; i < printObj.Length-1; i++)
         {
             printObj[i].Print();
             array[i].GetAverage();
