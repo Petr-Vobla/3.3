@@ -11,43 +11,47 @@ class Program
 
         Console.WriteLine("Вывод:");
 
-        for (int i = 0; i < array.Length-1; i++)
+        for (int i = 0; i < array.Length; i++)
         {
             array[i].Initialize();
             array[i].Print();
-            array[i].GetAverage();
+            Console.WriteLine(array[i].GetAverage());
         }
-
-        IPrinter[] printObj = new IPrinter[array.Length + 1];
-
-        for (int i = 0; i < array.Length; i++)
-        {
-            printObj[i] = array[i];
-        }
-        printObj [printObj.Length - 1] = new DaysOfWeek();
 
         for (int i = 0; i < array.Length; i++)
         {
             if (array[i] == null)
                 return; 
      
-            if (array[i] is OneDimesionalArray)
+            if (array[i] is IOneDimesionalArray)
             {
                 OneDimesionalArray func = (OneDimesionalArray)array[i];
                 func.DeleteElementsBiggerThan100();
                 func.RemoveDuplicates();
             }
-            else if (array[i] is Matrix)
+            else if (array[i] is IMatrix)
             {
                 Matrix func = (Matrix)array[i];
                 func.PrintArrayWithEvenReversedRows();
             }
-            else if (array[i] is JaggedArray)
+            else if (array[i] is IJaggedArray jagged)
             {
-                JaggedArray func = (JaggedArray)array[i];
-                func.GetAveragesInInnerArrays();
-                func.ChangeEvenElements();
+                jagged.GetAveragesInInnerArrays();
+                jagged.ChangeEvenElements();
             }
+        }
+
+        IPrinter[] printers = new IPrinter[array.Length + 1];
+
+        for (int i = 0; i < array.Length; i++)
+        {
+            printers[i] = array[i];
+        }
+        printers [printers.Length - 1] = new DaysOfWeek();
+
+        for (int i = 0; i < printers.Length; i++)
+        {
+            printers[i].Print();
         }
     }
 }

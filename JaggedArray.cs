@@ -7,9 +7,8 @@ interface IJaggedArray : IBaseArray
 
 
 public sealed class JaggedArray : IJaggedArray
-
 {
-    private int[][] array;
+    public int[][] array;
 
     public void Initialize(bool fillByUser = false)
     {
@@ -63,10 +62,7 @@ public sealed class JaggedArray : IJaggedArray
 
     public double[] GetAveragesInInnerArrays()
     {
-        if (array is null)
-        {
-            Console.WriteLine("array is null");
-        }
+        Console.WriteLine("GetAveragesInInnerArrays");
         double[] averages = new double[array.Length];
 
         for (int i = 0; i < array.Length; i++)
@@ -86,6 +82,7 @@ public sealed class JaggedArray : IJaggedArray
 
     public void ChangeEvenElements()
     {
+        Console.WriteLine("ChangeEvenElements");
         for (int i = 0; i < array.Length; i++)
         {
             for (int j = 0; j < array[i].Length; j++)
@@ -98,7 +95,7 @@ public sealed class JaggedArray : IJaggedArray
         }
     }
 
-    public void PrintArray()
+    public void Print()
     {
         Console.WriteLine("Вывод ступенчатого массива:");
         for (int i = 0; i < array.Length; i++)
@@ -109,10 +106,6 @@ public sealed class JaggedArray : IJaggedArray
             }
             Console.WriteLine();
         }
-    }
-    public void Print()
-    {
-
     }
 }
     

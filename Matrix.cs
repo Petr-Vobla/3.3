@@ -40,7 +40,7 @@ public sealed class Matrix : IMatrix
             }
         }
     }
-    public void PrintArray()
+    public void Print()
     {
         Console.WriteLine("Вывод матрицы:");
         for (int i = 0; i < array.GetLength(0); i++)
@@ -54,6 +54,7 @@ public sealed class Matrix : IMatrix
     }
     public void PrintArrayWithEvenReversedRows()
     {
+        Console.WriteLine("PrintArrayWithEvenReversedRows");
 
         for (int i = 0; i < array.GetLength(0); i++)
         {
@@ -89,10 +90,5 @@ public sealed class Matrix : IMatrix
         }
 
         return sum / array.Length;
-    }
-
-     public void Print()
-    {
-
     }
 }

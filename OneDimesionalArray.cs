@@ -34,7 +34,7 @@ public sealed class OneDimesionalArray : IOneDimesionalArray
             }
         }
     }
-    public void PrintOneDimesionalArray()
+    public void Print()
     {
         Console.WriteLine("Вывод одномерного массива:");
         foreach (int value in oneDArray)
@@ -60,6 +60,7 @@ public sealed class OneDimesionalArray : IOneDimesionalArray
 
     public void DeleteElementsBiggerThan100()
     {
+        Console.WriteLine("DeleteElementsBiggerThan100");
         int Index = 0;
         for (int i = 0; i < oneDArray.Length; i++)
         {
@@ -91,6 +92,7 @@ public sealed class OneDimesionalArray : IOneDimesionalArray
 
     public int[] RemoveDuplicates()
     {
+        Console.WriteLine("RemoveDuplicates");
         int calc = 0;
 
         int[] OneDimesionalArrayWithOutDublicates = new int[oneDArray.Length];
@@ -115,11 +117,6 @@ public sealed class OneDimesionalArray : IOneDimesionalArray
         }
         return NewOneDimesionalArrayWithOutDublicates;
 
-
-    }
-
-    public void Print()
-    {
 
     }
 }
