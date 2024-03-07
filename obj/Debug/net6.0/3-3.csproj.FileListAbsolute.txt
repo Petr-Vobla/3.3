@@ -1,0 +1,15 @@
+/workspaces/3.3/obj/Debug/net6.0/3-3.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/3.3/obj/Debug/net6.0/3-3.AssemblyInfoInputs.cache
+/workspaces/3.3/obj/Debug/net6.0/3-3.AssemblyInfo.cs
+/workspaces/3.3/obj/Debug/net6.0/3-3.csproj.CoreCompileInputs.cache
+/workspaces/3.3/obj/Debug/net6.0/3-3.sourcelink.json
+/workspaces/3.3/bin/Debug/net6.0/3-3
+/workspaces/3.3/bin/Debug/net6.0/3-3.deps.json
+/workspaces/3.3/bin/Debug/net6.0/3-3.runtimeconfig.json
+/workspaces/3.3/bin/Debug/net6.0/3-3.dll
+/workspaces/3.3/bin/Debug/net6.0/3-3.pdb
+/workspaces/3.3/obj/Debug/net6.0/3-3.dll
+/workspaces/3.3/obj/Debug/net6.0/refint/3-3.dll
+/workspaces/3.3/obj/Debug/net6.0/3-3.pdb
+/workspaces/3.3/obj/Debug/net6.0/3-3.genruntimeconfig.cache
+/workspaces/3.3/obj/Debug/net6.0/ref/3-3.dll
